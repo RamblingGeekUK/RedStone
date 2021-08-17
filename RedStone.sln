@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedStone", "RedStone.csproj", "{5D7FD068-6BD5-43D2-8C23-8C037BECA895}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D7FD068-6BD5-43D2-8C23-8C037BECA895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7FD068-6BD5-43D2-8C23-8C037BECA895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7FD068-6BD5-43D2-8C23-8C037BECA895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7FD068-6BD5-43D2-8C23-8C037BECA895}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05DF37AA-8EB8-4F67-82C8-F0FAE2CF1535}
+	EndGlobalSection
+EndGlobal
