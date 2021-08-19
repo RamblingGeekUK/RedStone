@@ -25,7 +25,8 @@ namespace RedStone.Controllers
         // GET: ServerConfig/Create
         public ActionResult Create()
         {
-            return View();
+            var settings = new Models.ServerProperties();
+            return View(settings);
         }
 
         // POST: ServerConfig/Create
