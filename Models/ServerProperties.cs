@@ -33,5 +33,7 @@ namespace RedStone.Models
         public string player_movement_duration_threshold_in_ms { get; set; }
         public string correct_player_movement {get;set;}
         public string server_authoritative_block_breaking { get; set; }
- }
+
+        public string value { get; set; }
+    }
 }

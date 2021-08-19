@@ -39,21 +39,20 @@ namespace RedStone.Controllers
                 //Filename 
                 string filename = "server.properties";
                 
-                // Text 
-                string gamemode = "gamemode=" + collection["gamemode"];
-                string allow_cheats = "allow-cheats=" + collection["allow_cheats"];
-
                 // Set a variable to the Documents path.
                 string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-                // Write the string array to a new file named "WriteLines.txt".
-                using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, filename)))
-                {
-                   outputFile.WriteLine(gamemode);
-                   outputFile.WriteLine(allow_cheats);
+                // Write the file using the collection
+                using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, filename),false))
+                {  
+                   foreach (var setting in collection)
+                    {
+                        if(setting.Key != "__RequestVerificationToken")  // It's grabbing this of the form and writing it out...I assume it being passed back as part of the collection.
+                        { 
+                            outputFile.WriteLine(setting.Key + "=" + setting.Value); 
+                        }
+                    }
                 }
-
-
                 return RedirectToAction(nameof(Index));
             }
             catch
