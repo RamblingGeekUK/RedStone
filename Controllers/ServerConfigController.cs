@@ -54,7 +54,7 @@ namespace RedStone.Controllers
                         }
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Create));
             }
             catch
             {
